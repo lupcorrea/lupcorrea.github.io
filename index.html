@@ -22,8 +22,8 @@
     </script>
     <!-- Fullpage initialization -->
 
-    <!-- Box styling -->
     <style>
+    /* Section */
     .container {
       width: 80%;
       height: 80%;
@@ -31,10 +31,36 @@
       margin-right: 10%;
       margin-top: 10%;
       margin-bottom: 10%;
-      background-color: black;
     }
+    /* Section */
+
+    /* Profile pic */
+    #profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    /* Profile pic */
+
+    /* Text */
+    .center-text {
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .justify-text {
+      margin: auto;
+      text-align: justify;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    /* Text */
     </style>
-    <!-- Box styling -->
+
 
   </head>
 
@@ -45,6 +71,18 @@
       <!-- General Info -->
       <div class="section">
         <div id="general-info" class="container">
+          <div class="row">
+            <img id="profile-pic" src="res/profile.jpg" alt="That's me!">
+            <div class="center-text">
+              <h1>Lucas P. Corrêa</h1>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 100px;">
+            <div class="justify-text">
+              <p>Placeholder text for personal description</p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- General Info -->
