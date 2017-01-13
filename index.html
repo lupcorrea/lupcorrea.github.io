@@ -16,156 +16,169 @@
 
     <!-- Fullpage initialization -->
     <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage();
-    });
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
     </script>
     <!-- Fullpage initialization -->
 
     <style>
-    /* Section */
-    .container {
-      width: 80%;
-      height: 80%;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-top: 10%;
-      margin-bottom: 10%;
-    }
-    /* Section */
+        /* Section */
+        .container {
+            width: 90%;
+            height: 90%;
+            margin: 5%;
+        }
+        /* Section */
+        
+        /* Row slices */
+        .row-2 {
+            height: 18%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        .row-3 {
+            height: 31%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        .row-4 {
+            height: 38%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        /* Row slices */
 
-    /* Profile pic */
-    #profile-pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      display: block;
-      margin: auto;
-      margin-bottom: 10px;
-    }
-    /* Profile pic */
+        /* Profile pic */
+        #profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        /* Profile pic */
 
-    /* University logos */
-    .uni-logo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      display: block;
-      margin: auto;
-      margin-bottom: 10%;
-      margin-top: 10%;
-    }
-    /* University logos */
+        /* University logos */
+        .uni-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+            margin-bottom: 10%;
+            margin-top: 10%;
+        }
+        /* University logos */ 
 
-    /* Education section margins *
-    .list-item-edu {
-      margin-top: 10%;
-      margin-bottom: 10%;
-    }
-    /* Education section margins */
-
-    /* Text */
-    .center-text {
-        margin: auto;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .justify-text {
-      margin: auto;
-      text-align: justify;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    /* Text */
+        /* Text */
+        .center-text {
+            margin: auto;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .justify-text {
+            margin: auto;
+            text-align: justify;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        /* Text */
     </style>
+    </head>
 
+    <body>
 
-  </head>
-
-  <body>
-
-    <!-- Fullpage wrapper -->
-    <div id="fullpage">
-      <!-- General Info -->
-      <div class="section">
-        <div id="general-info" class="container">
-          <div class="row">
-            <img id="profile-pic" src="res/profile.jpg" alt="That's me!">
-            <div class="center-text">
-              <h1>Lucas P. Corrêa</h1>
+        <!-- Fullpage wrapper -->
+        <div id="fullpage">
+            <!-- General Info -->
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <img id="profile-pic" src="res/profile.jpg">
+                    </div>
+                    
+                    <div class="row center-text">
+                        <h1>Lucas P. Corrêa</h1>
+                    </div>
+                    
+                    <div class="row justify-text" style="margin-top: 90px;">
+                        <p>Placeholder text for general description</p>
+                    </div>
+                </div>
             </div>
-          </div>
+            <!-- General Info -->
 
-          <div class="row" style="margin-top: 100px;">
-            <div class="justify-text">
-              <p>Placeholder text for personal description</p>
+            <!-- Education -->
+            <div class="section">
+                <div class="container">
+                    <div class="row row-2 center-text">
+                        <h1>Education</h1>
+                    </div>
+                    
+                    <div class="row row-4">
+                        <div class="col-md-3">
+                            <img class="uni-logo" src="res/ufpb-logo.png">
+                        </div>
+                        
+                        <div class="col-md-9">
+                            <div class="row row-3">
+                                <h3>Bachelor's</h3>
+                            </div>
+                            <div class="row row-3">
+                                <h4>Computer Engineering - Federal University of Paraíba</h4>
+                            </div>
+                            <div class="row row-3">
+                                <p><b>Status:</b> In course, 72% complete</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row row-4">
+                        <div class="col-md-3">
+                            <img class="uni-logo" src="res/kth-logo.jpg">
+                        </div>
+                        
+                        <div class="col-md-9">
+                            <div class="row row-3">
+                                <h3>Master's</h3>
+                            </div>
+                            <div class="row row-3">
+                                <h4>Human-Computer Interaction & Design - Kungliga Tekniska Högskolan</h4>
+                            </div>
+                            <div class="row row-3">
+                                <p><b>Status:</b> Paused, 50% complete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <!-- Education -->
+
+            <!-- General Skills -->
+            <div class="section">
+                <div class="container">
+                </div>
+            </div>
+            <!-- General Skills -->
+
+            <!-- Coding Skills -->
+            <div class="section">
+                <div class="container">
+                </div>
+            </div>
+            <!-- Coding Skills -->
+
+            <!-- Projects -->
+            <div class="section">
+                <div class="container">
+                </div>
+            </div>
+            <!-- Projects -->
+
         </div>
-      </div>
-      <!-- General Info -->
-
-      <!-- Education -->
-      <div class="section">
-        <div id="general-info" class="container">
-          <div class="row">
-            <div class="center-text">
-              <h1>Education</h1>
-            </div>
-          </div>
-
-          <div class="row list-item-edu">
-            <div class="col-md-4">
-              <img class="uni-logo" src="res/ufpb-logo.png">
-            </div>
-            <div class="col-md-8">
-              <div class="justify-text">
-                <h2>Bachelor's</h2>
-                <h3>Computer Engineering - Federal University of Paraíba</h3>
-                <p><b>Status:</b> In course, 72% complete</p>
-              </div>
-            </div>
-          </div>
-          <div class="row list-item-edu">
-            <div class="col-md-4">
-              <img class="uni-logo" src="res/kth-logo.jpg">
-            </div>
-            <div class="justify-text">
-              <h2>Master's</h2>
-              <h3>Human-Computer Interaction & Design- Kungliga Tekniska Högskolan</h3>
-              <p><b>Status:</b> Paused, 50% complete</p>
-            </div>
-            <div class="col-md-8">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Education -->
-
-      <!-- General Skills -->
-      <div class="section">
-        <div id="general-info" class="container">
-        </div>
-      </div>
-      <!-- General Skills -->
-
-      <!-- Programming Skills -->
-      <div class="section">
-        <div id="general-info" class="container">
-        </div>
-      </div>
-      <!-- Programming Skills -->
-
-      <!-- Projects -->
-      <div class="section">
-        <div id="general-info" class="container">
-        </div>
-      </div>
-      <!-- Projects -->
-
-    </div>
-    <!-- Fullpage wrapper -->
-
-  </body>
+        <!-- Fullpage wrapper -->
+    </body>
 </html>
