@@ -28,6 +28,20 @@
         });
     </script>
     <!-- Fullpage initialization -->
+      
+    <!-- Project descriptions -->
+    <script type="text/javascript">
+        $(document).ready (function() {
+            $('#ctpp').load("res/ctpp.txt"); 
+            $('#curriculum').load("res/curriculum.txt"); 
+            $('#yow').load("res/yow.txt"); 
+            
+            $('#systemc').load("res/systemc.txt"); 
+            $('#raster').load("res/raster.txt"); 
+            $('#pipeline').load("res/pipeline.txt"); 
+            $('#m3').load("res/m3.txt"); 
+        }) 
+    </script>
 
     <style>
         /* Syncopate */
@@ -121,6 +135,12 @@
             margin: auto;
         }
         /* Project panels */
+        
+        .network {
+            width: 25px;
+            height: 25px;
+            align-content: center;
+        }
         
         /* Finished projects subsection */
         #finished-projects {
@@ -237,11 +257,14 @@
                             <div class="row right-text">
                                 <h2>Lucas P. Corrêa</h2>
                             </div>
-                            <div class="row right-text" style="margin-top: 40px;margin-bottom: 0px;">
+                            <div class="row right-text" style="margin-top: 30px;margin-bottom: 0px;">
                                 <h4>Innovation-driven engineer.</h4>
+                                <h4 style="margin-top:10px;">Independent developer and eager creator during free time.</h4>
                             </div>
-                            <div class="row right-text" style="margin-top: 0px;">
-                                <h4>Independent developer and eager creator during free time.</h4>
+                            <div class="row" style="margin-top:30px; margin-right: 4px;">
+                                <a href="https://br.linkedin.com/pub/lucas-corr%C3%AAa/119/515/3b8" style="text-decoration:none;"><img class="network" src="res/linkedin.png" align="right"></a>
+                                
+                                <a href="https://github.com/lupcorrea" style="text-decoration:none;"><img class="network" src="res/github.png" align="right" style="margin-right:20px;"></a>
                             </div>
                         </div>
                     </div> 
