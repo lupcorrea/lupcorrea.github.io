@@ -21,10 +21,29 @@
     <!-- Fullpage initialization -->
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#fullpage').fullpage();
+            $('#fullpage').fullpage({
+                anchors:['info', 'education', 'skills', 'coding', 'portfolio']
+            });
         });
     </script>
     <!-- Fullpage initialization -->
+      
+    <!-- Navbar transition -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('nav .nav-item a').click(function(e) {
+
+                $('nav .active').removeClass('active');
+
+                var $parent = $(this).parent();
+                if (!$parent.hasClass('active')) {
+                    $parent.addClass('active');
+                    $(this).addClass ('active');
+                }
+            });
+        });
+    </script>
+    <!-- Navbar transition -->
 
     <style>
         /* Syncopate */
@@ -153,13 +172,67 @@
             margin-bottom: 10px;
         }
         /* Text */
+        
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            height: 3%;
+            background-color: #303030;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 120%;
+        }
+        .navbar a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            color: #ffffff;
+            text-decoration:none
+        }
+        .navbar div {
+            height: 100%;
+        }
+        .nav-item .active {
+            background: rgba(242, 242, 242, 1.0);
+        }
+        .nav-link .active {
+            color: #303030;
+        }
+        .navbar .nav-link:hover:not(.active) {
+            color: #303030;
+        }
+        .navbar .nav-item:hover:not(.active) {
+            background: rgba(242, 242, 242, 1.0);
+        }
+        .nav-item {
+            padding: 0px;
+            text-align: center;
+        }
+        .nav-link {
+            padding-top: 10px;
+        }
+        /* Navbar */
     </style>
     </head>
 
     <body>
 
+        <!-- Navigation buttons -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 nav-item"><a class="nav-link" href="#info">Information</a></div>
+                        <div class="col-md-2 nav-item"><a class="nav-link" href="#education">Education</a></div>
+                        <div class="col-md-2 nav-item"><a class="nav-link" href="#skills">Skills</a></div>
+                        <div class="col-md-2 nav-item"><a class="nav-link" href="#coding">Coding</a></div>
+                        <div class="col-md-3 nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navigation buttons -->
+        
         <!-- Fullpage wrapper -->
         <div id="fullpage">
+            
             <!-- General Info -->
             <div class="section">
                 <div class="container">
@@ -175,14 +248,16 @@
                         </div>
                     </div>
                     
-                    <div class="row" style="margin-top:20px;">
+                    <div class="row" style="margin-top:20px; margin-left:50px;">
                         <div class="col-md-7">
                             <div class="row right-text">
                                 <h2>Lucas P. Corrêa</h2>
                             </div>
-                    
-                            <div class="row right-text" style="margin-top: 40px;">
-                                <h4>Innovation-driven engineer.<br>Independent developer and eager creator during free time.</h4>
+                            <div class="row right-text" style="margin-top: 40px;margin-bottom: 0px;">
+                                <h4>Innovation-driven engineer.</h4>
+                            </div>
+                            <div class="row right-text" style="margin-top: 0px;">
+                                <h4>Independent developer and eager creator during free time.</h4>
                             </div>
                         </div>
                     </div> 
