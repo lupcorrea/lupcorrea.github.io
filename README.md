@@ -43,8 +43,8 @@ Also, I used the great [fullPage.js](http://alvarotrigo.com/fullPage/) plugin to
   * Dark Country/Frontier (lots of playlists on YouTube)
   * Wild Western
   
- ### To Do Hitlist:
- * Optimize the code
- * Organize the assets
- * Add popup screens on the portfolio section
- * Whatever else further feedback suggests
+### To Do Hitlist:
+* Optimize the code
+* Organize the assets
+* Add popup screens on the portfolio section
+* Whatever else further feedback suggests
