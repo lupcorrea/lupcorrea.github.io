@@ -22,28 +22,12 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors:['info', 'education', 'skills', 'coding', 'portfolio']
+                anchors:['info', 'education', 'skills', 'coding', 'portfolio'],
+                menu: '#menu'
             });
         });
     </script>
     <!-- Fullpage initialization -->
-      
-    <!-- Navbar transition -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('nav .nav-item a').click(function(e) {
-
-                $('nav .active').removeClass('active');
-
-                var $parent = $(this).parent();
-                if (!$parent.hasClass('active')) {
-                    $parent.addClass('active');
-                    $(this).addClass ('active');
-                }
-            });
-        });
-    </script>
-    <!-- Navbar transition -->
 
     <style>
         /* Syncopate */
@@ -191,17 +175,17 @@
         .navbar div {
             height: 100%;
         }
-        .nav-item .active {
-            background: rgba(242, 242, 242, 1.0);
-        }
-        .active a {
-            color: #303030;
-        }
         .navbar .nav-link:hover:not(.active) {
             color: #303030;
         }
         .navbar .nav-item:hover:not(.active) {
             background: rgba(242, 242, 242, 1.0);
+        }
+        .active.nav-item {
+            background: rgba(242, 242, 242, 1.0);
+        }
+        .active a {
+            color: #303030;
         }
         .nav-item {
             padding: 0px;
@@ -219,12 +203,12 @@
         <!-- Navigation buttons -->
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-3 nav-item"><a class="nav-link" href="#info">Information</a></div>
-                        <div class="col-md-2 nav-item"><a class="nav-link" href="#education">Education</a></div>
-                        <div class="col-md-2 nav-item"><a class="nav-link" href="#skills">Skills</a></div>
-                        <div class="col-md-2 nav-item"><a class="nav-link" href="#coding">Coding</a></div>
-                        <div class="col-md-3 nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></div>
+                    <div class="row" id="menu">
+                        <div data-menuanchor="info" class="col-md-3 nav-item"><a class="nav-link" href="#info">Information</a></div>
+                        <div data-menuanchor="education" class="col-md-2 nav-item"><a class="nav-link" href="#education">Education</a></div>
+                        <div data-menuanchor="skills" class="col-md-2 nav-item"><a class="nav-link" href="#skills">Skills</a></div>
+                        <div data-menuanchor="coding" class="col-md-2 nav-item"><a class="nav-link" href="#coding">Coding</a></div>
+                        <div data-menuanchor="portfolio" class="col-md-3 nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></div>
                     </div>
                 </div>
             </nav>
@@ -234,7 +218,7 @@
         <div id="fullpage">
             
             <!-- General Info -->
-            <div class="section">
+            <div class="section active">
                 <div class="container">
                     <div class="row" style="margin-top:30px;">
                         <div class="col-md-5">
