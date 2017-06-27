@@ -46,5 +46,7 @@ Also, I used the great [fullPage.js](http://alvarotrigo.com/fullPage/) plugin to
 ### To Do Hitlist:
 * Optimize the code
 * Organize the assets
-* Add popup screens on the portfolio section
+* ~~Add popup screens on the portfolio section~~ Totally revamp the Portfolio and Skills sections
+* Increase descriptions, the page is still too vague
+* Make the page responsive, it is awfully buggy in phones
 * Whatever else further feedback suggests
